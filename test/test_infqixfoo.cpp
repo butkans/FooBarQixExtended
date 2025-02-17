@@ -49,3 +49,16 @@ TEST(InfQixFooTest, HandlesNumbersThatAreNotMultiplesOrContainSpecialDigits) {
     EXPECT_EQ(infqixfoo(4), "4");
     EXPECT_EQ(infqixfoo(11), "11");
 }
+
+TEST(InfQixFooTest, HandlesSumOfDigitsMultipleOf8) {
+    EXPECT_EQ(infqixfoo(8), "Inf;Inf");   // Sum of digits: 8 -> Inf should be added again at the end
+    EXPECT_EQ(infqixfoo(16), "Inf");      // Sum of digits: 1+6=7 -> No Inf added, so "Inf" shouldn't be at the end
+    EXPECT_EQ(infqixfoo(123), "Foo;Qix;Inf");  // Sum of digits: 1+2+3=6 -> Inf should be added at the end
+}
+
+TEST(InfQixFooTest, HandlesMultipleSumOfDigitsCases) {
+    EXPECT_EQ(infqixfoo(111), "Foo;Foo;Inf"); // Sum of digits: 1+1+1=3 -> Inf added at the end
+    EXPECT_EQ(infqixfoo(97), "Qix;Foo;Inf");  // Sum of digits: 9+7=16 -> Inf added at the end
+    EXPECT_EQ(infqixfoo(789), "Inf;Qix;Foo;Inf");  // Sum of digits: 7+8+9=24 -> Inf added at the end
+}
+

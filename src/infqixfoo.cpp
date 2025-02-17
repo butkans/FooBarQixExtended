@@ -35,7 +35,7 @@ string infqixfoo(int number) {
             if (hasMultiple) result += ";";
             result += "Qix";
             hasMultiple = true;
-       }
+        }
         if (digit == '3') {
             if (hasMultiple) result += ";";
             result += "Foo";
@@ -43,6 +43,15 @@ string infqixfoo(int number) {
         }
     }
 
-    // If no transformation, return the number as a string
+    // Handle sum of digits condition (append "Inf" at the very end without a semicolon)
+    int digitSum = 0;
+    for (char digit : numberStr) {
+        digitSum += digit - '0';
+    }
+
+    if (digitSum % 8 == 0) {
+        result += "Inf";  // Append "Inf" directly without modifying previous structure
+    }
+
     return result.empty() ? numberStr : result;
 }

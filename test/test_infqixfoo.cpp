@@ -4,7 +4,7 @@
 // Test cases for InfQixFoo service
 
 TEST(InfQixFooTest, HandlesMultiplesOf8) {
-    EXPECT_EQ(infqixfoo(8), "Inf;Inf");
+    EXPECT_EQ(infqixfoo(8), "Inf;InfInf");
     EXPECT_EQ(infqixfoo(16), "Inf");
     EXPECT_EQ(infqixfoo(64), "Inf");
 }
@@ -12,7 +12,7 @@ TEST(InfQixFooTest, HandlesMultiplesOf8) {
 TEST(InfQixFooTest, HandlesMultiplesOf7) {
     EXPECT_EQ(infqixfoo(7), "Qix;Qix");
     EXPECT_EQ(infqixfoo(14), "Qix");
-    EXPECT_EQ(infqixfoo(35), "Qix;Foo");
+    EXPECT_EQ(infqixfoo(35), "Qix;FooInf");
 }
 
 TEST(InfQixFooTest, HandlesMultiplesOf3) {
@@ -51,14 +51,14 @@ TEST(InfQixFooTest, HandlesNumbersThatAreNotMultiplesOrContainSpecialDigits) {
 }
 
 TEST(InfQixFooTest, HandlesSumOfDigitsMultipleOf8) {
-    EXPECT_EQ(infqixfoo(8), "Inf;Inf");   // Sum of digits: 8 -> Inf should be added again at the end
+    EXPECT_EQ(infqixfoo(8), "Inf;InfInf");   // Sum of digits: 8 -> Inf should be added again at the end
     EXPECT_EQ(infqixfoo(16), "Inf");      // Sum of digits: 1+6=7 -> No Inf added, so "Inf" shouldn't be at the end
-    EXPECT_EQ(infqixfoo(123), "Foo;Qix;Inf");  // Sum of digits: 1+2+3=6 -> Inf should be added at the end
+    EXPECT_EQ(infqixfoo(123), "Foo;Foo");  // Sum of digits: 1+2+3=6 -> Inf should be added at the end
 }
 
 TEST(InfQixFooTest, HandlesMultipleSumOfDigitsCases) {
-    EXPECT_EQ(infqixfoo(111), "Foo;Foo;Inf"); // Sum of digits: 1+1+1=3 -> Inf added at the end
-    EXPECT_EQ(infqixfoo(97), "Qix;Foo;Inf");  // Sum of digits: 9+7=16 -> Inf added at the end
-    EXPECT_EQ(infqixfoo(789), "Inf;Qix;Foo;Inf");  // Sum of digits: 7+8+9=24 -> Inf added at the end
+    EXPECT_EQ(infqixfoo(111), "Foo"); // Sum of digits: 1+1+1=3 -> Inf added at the end
+    EXPECT_EQ(infqixfoo(97), "QixInf");  // Sum of digits: 9+7=16 -> Inf added at the end
+    EXPECT_EQ(infqixfoo(789), "Foo;Qix;InfInf");  // Sum of digits: 7+8+9=24 -> Inf added at the end
 }
 

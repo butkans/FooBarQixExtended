@@ -156,8 +156,8 @@ googletest/googletest/clean: googletest/googletest/CMakeFiles/gtest_main.dir/cle
 # Target rules for target CMakeFiles/FooBarQixExtended.dir
 
 # All Build rule for target.
-CMakeFiles/FooBarQixExtended.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/FooBarQixExtended.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/FooBarQixExtended.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FooBarQixExtended.dir\build.make CMakeFiles/FooBarQixExtended.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\FooBarQixExtended.dir\build.make CMakeFiles/FooBarQixExtended.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\MDprojekts\FooBarQixExtended\build\CMakeFiles --progress-num=1,2 "Built target FooBarQixExtended"
@@ -189,8 +189,8 @@ CMakeFiles/FooBarQixExtended.dir/clean:
 # Target rules for target CMakeFiles/testFooBarQixExtended.dir
 
 # All Build rule for target.
-CMakeFiles/testFooBarQixExtended.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/testFooBarQixExtended.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/testFooBarQixExtended.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testFooBarQixExtended.dir\build.make CMakeFiles/testFooBarQixExtended.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testFooBarQixExtended.dir\build.make CMakeFiles/testFooBarQixExtended.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\MDprojekts\FooBarQixExtended\build\CMakeFiles --progress-num=11,12,13 "Built target testFooBarQixExtended"
@@ -222,8 +222,8 @@ CMakeFiles/testFooBarQixExtended.dir/clean:
 # Target rules for target CMakeFiles/testInfQixFoo.dir
 
 # All Build rule for target.
-CMakeFiles/testInfQixFoo.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 CMakeFiles/testInfQixFoo.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/testInfQixFoo.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testInfQixFoo.dir\build.make CMakeFiles/testInfQixFoo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testInfQixFoo.dir\build.make CMakeFiles/testInfQixFoo.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\MDprojekts\FooBarQixExtended\build\CMakeFiles --progress-num=14,15,16 "Built target testInfQixFoo"
@@ -287,8 +287,8 @@ googletest/googlemock/CMakeFiles/gmock.dir/clean:
 # Target rules for target googletest/googlemock/CMakeFiles/gmock_main.dir
 
 # All Build rule for target.
-googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googlemock/CMakeFiles/gmock.dir/all
 googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+googletest/googlemock/CMakeFiles/gmock_main.dir/all: googletest/googlemock/CMakeFiles/gmock.dir/all
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f googletest\googlemock\CMakeFiles\gmock_main.dir\build.make googletest/googlemock/CMakeFiles/gmock_main.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\MDprojekts\FooBarQixExtended\build\CMakeFiles --progress-num=5,6 "Built target gmock_main"

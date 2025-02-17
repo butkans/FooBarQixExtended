@@ -1,5 +1,6 @@
 CMakeFiles/testInfQixFoo.dir/src/infqixfoo.cpp.obj: \
  D:\MDprojekts\FooBarQixExtended\src\infqixfoo.cpp \
+ D:\MDprojekts\FooBarQixExtended\src\infqixfoo.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/string \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32/bits/os_defines.h \

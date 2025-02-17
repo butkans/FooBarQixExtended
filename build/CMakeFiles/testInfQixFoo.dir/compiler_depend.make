@@ -107,7 +107,8 @@ CMakeFiles/testInfQixFoo.dir/src/infqixfoo.cpp.obj: D:/MDprojekts/FooBarQixExten
   C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
   C:/mingw64/x86_64-w64-mingw32/include/sys/types.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h \
-  C:/mingw64/x86_64-w64-mingw32/include/wchar.h
+  C:/mingw64/x86_64-w64-mingw32/include/wchar.h \
+  D:/MDprojekts/FooBarQixExtended/src/infqixfoo.h
 
 CMakeFiles/testInfQixFoo.dir/test/test_infqixfoo.cpp.obj: D:/MDprojekts/FooBarQixExtended/test/test_infqixfoo.cpp \
   C:/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed/limits.h \

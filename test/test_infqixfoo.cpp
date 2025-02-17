@@ -4,21 +4,21 @@
 // Test cases for InfQixFoo service
 
 TEST(InfQixFooTest, HandlesMultiplesOf8) {
-    EXPECT_EQ(infqixfoo(8), "Inf");
+    EXPECT_EQ(infqixfoo(8), "Inf;Inf");
     EXPECT_EQ(infqixfoo(16), "Inf");
     EXPECT_EQ(infqixfoo(64), "Inf");
 }
 
 TEST(InfQixFooTest, HandlesMultiplesOf7) {
-    EXPECT_EQ(infqixfoo(7), "Qix");
+    EXPECT_EQ(infqixfoo(7), "Qix;Qix");
     EXPECT_EQ(infqixfoo(14), "Qix");
-    EXPECT_EQ(infqixfoo(35), "Qix");
+    EXPECT_EQ(infqixfoo(35), "Qix;Foo");
 }
 
 TEST(InfQixFooTest, HandlesMultiplesOf3) {
-    EXPECT_EQ(infqixfoo(3), "Foo");
+    EXPECT_EQ(infqixfoo(3), "Foo;Foo");
     EXPECT_EQ(infqixfoo(9), "Foo");
-    EXPECT_EQ(infqixfoo(21), "Foo");
+    EXPECT_EQ(infqixfoo(21), "Qix;Foo");
 }
 
 TEST(InfQixFooTest, HandlesMultiplesOf8And7) {
@@ -39,9 +39,9 @@ TEST(InfQixFooTest, HandlesMultiplesOf8And3And7) {
 }
 
 TEST(InfQixFooTest, HandlesNumbersWithOnlyOccurrences) {
-    EXPECT_EQ(infqixfoo(37), "FooQix");
-    EXPECT_EQ(infqixfoo(73), "QixFoo");
-    EXPECT_EQ(infqixfoo(87), "Foo;inf;Qix");
+    EXPECT_EQ(infqixfoo(37), "Foo;Qix");
+    EXPECT_EQ(infqixfoo(73), "Qix;Foo");
+    EXPECT_EQ(infqixfoo(87), "Foo;Inf;Qix");
 }
 
 TEST(InfQixFooTest, HandlesNumbersThatAreNotMultiplesOrContainSpecialDigits) {

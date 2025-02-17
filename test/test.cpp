@@ -34,7 +34,7 @@ TEST(FooBarServiceTest, HandlesMultiplesOf3And7) {
 TEST(FooBarServiceTest, HandlesMultiplesOf5And7) {
     EXPECT_EQ(fooBarService(35), "BarQix");
     EXPECT_EQ(fooBarService(70), "BarQix");
-    EXPECT_EQ(fooBarService(105), "BarQix");
+    EXPECT_EQ(fooBarService(140), "BarQix");
 }
 
 TEST(FooBarServiceTest, HandlesMultiplesOf3And5And7) {

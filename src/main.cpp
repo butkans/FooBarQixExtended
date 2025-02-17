@@ -8,6 +8,7 @@ string fooBarService(int number) {
 
     if (number % 3 == 0) result += "Foo";
     if (number % 5 == 0) result += "Bar";
+    if (number % 7 == 0) result += "Qix";
 
     return result.empty() ? to_string(number) : result;
 }

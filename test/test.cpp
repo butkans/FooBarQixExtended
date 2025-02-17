@@ -46,7 +46,7 @@ TEST(FooBarServiceTest, HandlesMultiplesOf3And5And7) {
 TEST(FooBarServiceTest, HandlesNumbersWithOnlyOccurrences) {
     EXPECT_EQ(fooBarService(53), "BarFoo");
     EXPECT_EQ(fooBarService(37), "FooQix");
-    EXPECT_EQ(fooBarService(57), "BarQix");
+    EXPECT_EQ(fooBarService(57), "FooBarQix");
 }
 
 TEST(FooBarServiceTest, HandlesNumbersThatAreNotMultiplesOrContainSpecialDigits) {

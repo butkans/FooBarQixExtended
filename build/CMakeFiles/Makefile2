@@ -64,12 +64,14 @@ CMAKE_BINARY_DIR = D:\MDprojekts\FooBarQixExtended\build
 # The main recursive "all" target.
 all: CMakeFiles/FooBarQixExtended.dir/all
 all: CMakeFiles/testFooBarQixExtended.dir/all
+all: CMakeFiles/testInfQixFoo.dir/all
 all: googletest/all
 .PHONY : all
 
 # The main recursive "codegen" target.
 codegen: CMakeFiles/FooBarQixExtended.dir/codegen
 codegen: CMakeFiles/testFooBarQixExtended.dir/codegen
+codegen: CMakeFiles/testInfQixFoo.dir/codegen
 codegen: googletest/codegen
 .PHONY : codegen
 
@@ -80,6 +82,7 @@ preinstall: googletest/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/FooBarQixExtended.dir/clean
 clean: CMakeFiles/testFooBarQixExtended.dir/clean
+clean: CMakeFiles/testInfQixFoo.dir/clean
 clean: googletest/clean
 .PHONY : clean
 
@@ -214,6 +217,39 @@ CMakeFiles/testFooBarQixExtended.dir/codegen:
 CMakeFiles/testFooBarQixExtended.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testFooBarQixExtended.dir\build.make CMakeFiles/testFooBarQixExtended.dir/clean
 .PHONY : CMakeFiles/testFooBarQixExtended.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/testInfQixFoo.dir
+
+# All Build rule for target.
+CMakeFiles/testInfQixFoo.dir/all: googletest/googletest/CMakeFiles/gtest.dir/all
+CMakeFiles/testInfQixFoo.dir/all: googletest/googletest/CMakeFiles/gtest_main.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testInfQixFoo.dir\build.make CMakeFiles/testInfQixFoo.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testInfQixFoo.dir\build.make CMakeFiles/testInfQixFoo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\MDprojekts\FooBarQixExtended\build\CMakeFiles --progress-num=14,15,16 "Built target testInfQixFoo"
+.PHONY : CMakeFiles/testInfQixFoo.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/testInfQixFoo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\MDprojekts\FooBarQixExtended\build\CMakeFiles 7
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/testInfQixFoo.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\MDprojekts\FooBarQixExtended\build\CMakeFiles 0
+.PHONY : CMakeFiles/testInfQixFoo.dir/rule
+
+# Convenience name for target.
+testInfQixFoo: CMakeFiles/testInfQixFoo.dir/rule
+.PHONY : testInfQixFoo
+
+# codegen rule for target.
+CMakeFiles/testInfQixFoo.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testInfQixFoo.dir\build.make CMakeFiles/testInfQixFoo.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=D:\MDprojekts\FooBarQixExtended\build\CMakeFiles --progress-num=14,15,16 "Finished codegen for target testInfQixFoo"
+.PHONY : CMakeFiles/testInfQixFoo.dir/codegen
+
+# clean rule for target.
+CMakeFiles/testInfQixFoo.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testInfQixFoo.dir\build.make CMakeFiles/testInfQixFoo.dir/clean
+.PHONY : CMakeFiles/testInfQixFoo.dir/clean
 
 #=============================================================================
 # Target rules for target googletest/googlemock/CMakeFiles/gmock.dir

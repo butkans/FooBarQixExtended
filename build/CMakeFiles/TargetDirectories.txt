@@ -1,5 +1,6 @@
 D:/MDprojekts/FooBarQixExtended/build/CMakeFiles/FooBarQixExtended.dir
 D:/MDprojekts/FooBarQixExtended/build/CMakeFiles/testFooBarQixExtended.dir
+D:/MDprojekts/FooBarQixExtended/build/CMakeFiles/testInfQixFoo.dir
 D:/MDprojekts/FooBarQixExtended/build/CMakeFiles/test.dir
 D:/MDprojekts/FooBarQixExtended/build/CMakeFiles/edit_cache.dir
 D:/MDprojekts/FooBarQixExtended/build/CMakeFiles/rebuild_cache.dir

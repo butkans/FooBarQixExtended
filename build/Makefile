@@ -197,6 +197,19 @@ testFooBarQixExtended/fast:
 .PHONY : testFooBarQixExtended/fast
 
 #=============================================================================
+# Target rules for targets named testInfQixFoo
+
+# Build rule for target.
+testInfQixFoo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 testInfQixFoo
+.PHONY : testInfQixFoo
+
+# fast build rule for target.
+testInfQixFoo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testInfQixFoo.dir\build.make CMakeFiles/testInfQixFoo.dir/build
+.PHONY : testInfQixFoo/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -247,6 +260,30 @@ gtest_main: cmake_check_build_system
 gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f googletest\googletest\CMakeFiles\gtest_main.dir\build.make googletest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
+
+src/infqixfoo.obj: src/infqixfoo.cpp.obj
+.PHONY : src/infqixfoo.obj
+
+# target to build an object file
+src/infqixfoo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testInfQixFoo.dir\build.make CMakeFiles/testInfQixFoo.dir/src/infqixfoo.cpp.obj
+.PHONY : src/infqixfoo.cpp.obj
+
+src/infqixfoo.i: src/infqixfoo.cpp.i
+.PHONY : src/infqixfoo.i
+
+# target to preprocess a source file
+src/infqixfoo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testInfQixFoo.dir\build.make CMakeFiles/testInfQixFoo.dir/src/infqixfoo.cpp.i
+.PHONY : src/infqixfoo.cpp.i
+
+src/infqixfoo.s: src/infqixfoo.cpp.s
+.PHONY : src/infqixfoo.s
+
+# target to generate assembly for a file
+src/infqixfoo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testInfQixFoo.dir\build.make CMakeFiles/testInfQixFoo.dir/src/infqixfoo.cpp.s
+.PHONY : src/infqixfoo.cpp.s
 
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
@@ -299,6 +336,30 @@ test/test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\testFooBarQixExtended.dir\build.make CMakeFiles/testFooBarQixExtended.dir/test/test.cpp.s
 .PHONY : test/test.cpp.s
 
+test/test_infqixfoo.obj: test/test_infqixfoo.cpp.obj
+.PHONY : test/test_infqixfoo.obj
+
+# target to build an object file
+test/test_infqixfoo.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testInfQixFoo.dir\build.make CMakeFiles/testInfQixFoo.dir/test/test_infqixfoo.cpp.obj
+.PHONY : test/test_infqixfoo.cpp.obj
+
+test/test_infqixfoo.i: test/test_infqixfoo.cpp.i
+.PHONY : test/test_infqixfoo.i
+
+# target to preprocess a source file
+test/test_infqixfoo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testInfQixFoo.dir\build.make CMakeFiles/testInfQixFoo.dir/test/test_infqixfoo.cpp.i
+.PHONY : test/test_infqixfoo.cpp.i
+
+test/test_infqixfoo.s: test/test_infqixfoo.cpp.s
+.PHONY : test/test_infqixfoo.s
+
+# target to generate assembly for a file
+test/test_infqixfoo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\testInfQixFoo.dir\build.make CMakeFiles/testInfQixFoo.dir/test/test_infqixfoo.cpp.s
+.PHONY : test/test_infqixfoo.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -318,12 +379,19 @@ help:
 	@echo ... gtest
 	@echo ... gtest_main
 	@echo ... testFooBarQixExtended
+	@echo ... testInfQixFoo
+	@echo ... src/infqixfoo.obj
+	@echo ... src/infqixfoo.i
+	@echo ... src/infqixfoo.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
 	@echo ... test/test.obj
 	@echo ... test/test.i
 	@echo ... test/test.s
+	@echo ... test/test_infqixfoo.obj
+	@echo ... test/test_infqixfoo.i
+	@echo ... test/test_infqixfoo.s
 .PHONY : help
 
 

@@ -1,8 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
+using namespace std;
 
 #include <string>
 
-std::string fooBarService(int number);  // Function declaration only
+string fooBarService(int number);  // Function declaration only
 
 #endif // MAIN_H

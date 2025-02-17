@@ -1,10 +1,13 @@
 #include<iostream>
 #include "main.h"
 #include<string>
+using namespace std;
 
-std::string fooBarService(int number) {
-  if (number % 3 == 0 && number % 5 == 0) return "Foo";
-  if (number % 3 == 0) return "Bar";
-  if (number % 5 == 0) return "Foo";
-  return "FooBar";
+string fooBarService(int number) {
+    string result = "";
+
+    if (number % 3 == 0) result += "Foo";
+    if (number % 5 == 0) result += "Bar";
+
+    return result.empty() ? to_string(number) : result;
 }
